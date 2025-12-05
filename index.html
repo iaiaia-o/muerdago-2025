@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Muérdago - Conexiones Sagradas</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Iconos Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Fuentes y Animaciones Personalizadas -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Animación suave para los campos de color (Respiración del bosque) */
+        @keyframes float {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.7; }
+        }
+
+        .blob-nature { animation: float 20s infinite ease-in-out; }
+        .blob-life { animation: float 25s infinite ease-in-out reverse; }
+        .blob-ai { animation: float 30s infinite ease-in-out 5s; }
+        .blob-magic { animation: pulse-slow 15s infinite ease-in-out; }
+    </style>
+</head>
+<body class="min-h-screen bg-[#FDFBF7] text-slate-800 selection:bg-red-100 antialiased relative overflow-x-hidden">
+
+    <!-- 
+      === FONDO EXPRESIONISTA === 
+      Campos de color difuminados que crean la atmósfera.
+      z-index negativo para que estén siempre detrás.
+    -->
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <!-- Mancha 1: Naturaleza (Verde Profundo) - Arriba Izquierda -->
+        <div class="blob-nature absolute top-[-10%] left-[-10%] w-[70vw] h-[70vw] bg-[#1A332A] rounded-full mix-blend-multiply filter blur-[100px] opacity-20"></div>
+        
+        <!-- Mancha 2: Vida (Rojo Óxido) - Abajo Derecha -->
+        <div class="blob-life absolute bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] bg-[#8B1E1E] rounded-full mix-blend-multiply filter blur-[120px] opacity-15"></div>
+        
+        <!-- Mancha 3: IA/Misterio (Índigo Digital) - Centro Flotante -->
+        <div class="blob-ai absolute top-[30%] left-[30%] w-[40vw] h-[40vw] bg-[#6366f1] rounded-full mix-blend-multiply filter blur-[150px] opacity-10"></div>
+        
+        <!-- Mancha 4: Magia (Dorado) - Toques de luz -->
+        <div class="blob-magic absolute top-[10%] right-[20%] w-[30vw] h-[30vw] bg-[#D4AF37] rounded-full mix-blend-multiply filter blur-[80px] opacity-20"></div>
+    </div>
+
+    <!-- --- Header / Título --- -->
+    <header class="pt-20 pb-10 px-6 max-w-4xl mx-auto text-center relative">
+        <div class="flex justify-center mb-6">
+            <!-- Icono Corazón -->
+            <i data-lucide="heart" class="w-8 h-8 text-[#8B1E1E] fill-current opacity-80" stroke-width="1.5"></i>
+        </div>
+        <h1 class="text-5xl md:text-4xl font-light tracking-wide text-[#8B1E1E] mb-8 font-serif drop-shadow-sm">
+            EL MUÉRDAGO
+        </h1>
+        <p class="text-base md:text-base leading-relaxed text-slate-700 font-light max-w-2xl mx-auto drop-shadow-sm bg-white/30 backdrop-blur-sm p-4 rounded-xl border border-white/40">
+            El muérdago es la planta sagrada de los druidas y siempre acude para recordarnos las conexiones que hacen posible nuestra vida. Un símbolo de perennidad en el corazón del invierno y un brindis por la amistad que es nuestra mejor fortuna. Ven con tus mejores galas camperas para recibir sus bendiciones para el nuevo Año.
+        </p>
+    </header>
+
+    <!-- --- Espacio Visual (Imagen) --- -->
+    <section class="w-full px-4 md:px-0 mb-24">
+        <div class="max-w-5xl mx-auto aspect-video md:aspect-[21/9] bg-[#1A332A]/10 rounded-sm overflow-hidden shadow-2xl relative backdrop-blur-sm border border-white/20">
+            
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-full h-full relative">
+                    <!-- Imagen de fondo -->
+                    <img 
+                        src="muerdago-2025.jpg" 
+                        alt="Muérdago artístico" 
+                        class="w-full h-full object-cover opacity-80 mix-blend-overlay"
+                        onerror="this.src='https://images.unsplash.com/photo-1518983835933-7268875affe7?q=80&w=2676&auto=format&fit=crop'"
+                    >
+                    <!-- Capa extra para integrar la imagen con el ambiente onírico -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1A332A] via-transparent to-[#D4AF37]/10 opacity-60"></div>
+                </div>
+            </div>
+            
+            <!-- Etiqueta sutil -->
+            <div class="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white/90">
+                <span class="uppercase tracking-[0.3em] text-xs font-medium drop-shadow-md">urban camper outfit</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Columnas de Contenido --- -->
+    <section class="px-6 pb-24 max-w-7xl mx-auto">
+        <div class="flex flex-wrap justify-center gap-12 lg:gap-10">
+          
+            <!-- Columna 1: Pócima -->
+            <div class="flex flex-col items-center text-center group cursor-pointer w-full md:w-5/12 lg:w-1/6 min-w-[200px]">
+                <div class="mb-6 p-4 rounded-full border border-[#8B1E1E]/30 bg-white/40 backdrop-blur-md text-[#8B1E1E] group-hover:bg-[#8B1E1E] group-hover:text-white transition-all duration-500 shadow-sm">
+                    <i data-lucide="flask-conical" width="32" height="32" stroke-width="1.2"></i>
+                </div>
+                <h3 class="text-xl font-serif text-[#1A332A] mb-3">Pócima Sabrosa</h3>
+                <p class="text-sm text-slate-600 font-light leading-relaxed px-2">
+                    La receta secreta para brindar y entrar en calorcito. Lo que ofrece el caldero, el fuego y el tiempo. Es como caerse en la marmita de Asterix y Obelix para tomar toda la energía.
+                </p>
+            </div>
+
+            <!-- Columna 2: GPS -->
+            <div class="flex flex-col items-center text-center group cursor-pointer w-full md:w-5/12 lg:w-1/6 min-w-[200px]">
+                <div class="mb-6 p-4 rounded-full border border-[#1A332A]/30 bg-white/40 backdrop-blur-md text-[#1A332A] group-hover:bg-[#1A332A] group-hover:text-white transition-all duration-500 shadow-sm">
+                    <i data-lucide="map" width="32" height="32" stroke-width="1.2"></i>
+                </div>
+                <h3 class="text-xl font-serif text-[#1A332A] mb-3">Exposición GPS</h3>
+                <p class="text-sm text-slate-600 font-light leading-relaxed px-2">
+                  Entre árboles hay micro intervenciones dispersas. Mini coordenadas de la memoria de este año entre luces y sombras. Un recorrido a descubrir. Arte en la Naturaleza. Arte entre la Naturaleza.
+                </p>
+            </div>
+           
+
+            <!-- Columna 4: Belén IA -->
+            <div class="flex flex-col items-center text-center group cursor-pointer w-full md:w-5/12 lg:w-1/6 min-w-[200px]">
+                <div class="mb-6 p-4 rounded-full border border-[#D4AF37]/50 bg-white/40 backdrop-blur-md text-[#b59224] group-hover:bg-[#D4AF37] group-hover:text-white transition-all duration-500 shadow-sm">
+                    <i data-lucide="sparkles" width="32" height="32" stroke-width="1.2"></i>
+                </div>
+                <h3 class="text-xl font-serif text-[#1A332A] mb-3">Belén IA</h3>
+                <p class="text-sm text-slate-600 font-light leading-relaxed px-2">
+                    La tradición reinterpretada por algoritmos. Un Belén digital que se abre paso en medio de la presencia centenaria. Porque lo que importa no son las herramientas sino el mensaje.
+                </p>
+            </div>
+
+            <!-- Columna 5: Matusalén -->
+            <div class="flex flex-col items-center text-center group cursor-pointer w-full md:w-5/12 lg:w-1/6 min-w-[200px]">
+                <div class="mb-6 p-4 rounded-full border border-slate-400 bg-white/40 backdrop-blur-md text-slate-600 group-hover:bg-slate-700 group-hover:text-white transition-all duration-500 shadow-sm">
+                    <i data-lucide="hourglass" width="32" height="32" stroke-width="1.2"></i>
+                </div>
+                <h3 class="text-xl font-serif text-[#1A332A] mb-3">Saludo a Matusalén</h3>
+                <p class="text-sm text-slate-600 font-light leading-relaxed px-2">
+                    Honrando el tiempo y la longevidad. Un mensaje para quién ha visto todos los inviernos. Un abrazo para este árbol que nos espera todos los años.
+                </p>
+            </div>
+ <!-- Columna 3: Céilidh -->
+            <div class="flex flex-col items-center text-center group cursor-pointer w-full md:w-5/12 lg:w-1/6 min-w-[200px]">
+                <div class="mb-6 p-4 rounded-full border border-[#B45309]/40 bg-white/40 backdrop-blur-md text-[#B45309] group-hover:bg-[#B45309] group-hover:text-white transition-all duration-500 shadow-sm">
+                    <i data-lucide="music" width="32" height="32" stroke-width="1.2"></i>
+                </div>
+                <h3 class="text-xl font-serif text-[#1A332A] mb-3">Céilidh</h3>
+                <p class="text-sm text-slate-600 font-light leading-relaxed px-2">
+                    Baile comunitario en torno al árbol. La energía del grupo girando unida para celebrar la vida, al ritmo de la música y bajo las ramas del bosque.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Sección de Cita / RSVP --- -->
+    <section class="px-6 pb-20 max-w-2xl mx-auto text-center border-t border-slate-300/50 pt-16 relative">
+        <h4 class="text-base md:text-2xl font-serif text-[#8B1E1E] mb-4">
+            La Cita
+        </h4>
+        
+        <!-- Párrafo para fecha y hora -->
+        <p class="text-base md:text-base text-slate-800 font-light mb-10 tracking-wide">
+            Sábado, 27 de Diciembre<span class="mx-2 text-[#8B1E1E]">/</span>12:00h <br>
+            <span class="text-base mt-2 block opacity-80">Te enviamos detalles y GPS</span>
+        </p>
+
+        <!-- Botón de confirmación -->
+        <a 
+            href="mailto:2012creadores@gmail.com?subject=Quiero ir a visitar el muérdago"
+            class="inline-block px-12 py-4 bg-[#8B1E1E]/90 backdrop-blur text-white font-serif text-lg tracking-widest hover:bg-[#681515] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1 decoration-0 rounded-sm"
+            style="text-decoration: none;"
+        >
+            VOY
+        </a>
+    </section>
+
+    <!-- --- Footer Sutil --- -->
+    <footer class="text-center py-8 text-xs text-slate-500 uppercase tracking-widest relative">
+        © Navidad 2025 — Contemplación del Bosque
+    </footer>
+
+    <!-- Script para renderizar los iconos de Lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
